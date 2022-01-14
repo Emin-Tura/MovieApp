@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-header">
+        <marquee behavior="alternate" direction="left">
+          <h3>Movie Project</h3>
+        </marquee>
+      </div>
+      <div class="section-login" id="movie-form">
+        <input type="text" id="movieName" placeholder="Movie Name" />
+        <input type="text" id="director" placeholder="Director" />
+        <input type="text" id="link" placeholder="Movie Banner Link " />
+      </div>
+      <button class="addBtn btn" type="submit">Add to Movie</button>
+      <div class="section-banner-header">
+        <marquee behavior="alternate" direction="right">
+          <h3>Movies</h3>
+        </marquee>
+      </div>
+      <div class="section-banner">
+        <table>
+          <thead>
+            <tr>
+              <th>Movie Banner</th>
+              <th>Movie Name</th>
+              <th>Director</th>
+            </tr>
+          </thead>
+          <tbody id="movies">
+            <!-- <tr>
+              <td>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9vS5zMlXHmnysS13VE2ExGClssIJEtDgZYQ&usqp=CAU"
+                  alt=""
+                />
+              </td>
+              <td>Harry Potter</td>
+              <td>Casey Patterson</td>
+              <td>
+                <button class="dltBtn btn" id="delete-film">
+                  Delete to Movie
+                </button>
+              </td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+      <button class="clearAll btn">Clear All Movies</button>
+    </div>
+
+    <script src="js/film.js"></script>
+    <script src="js/project.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/storage.js"></script>
+  </body>
+</html>
